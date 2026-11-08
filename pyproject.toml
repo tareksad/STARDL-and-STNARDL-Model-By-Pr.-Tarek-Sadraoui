@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pystardl"
+version = "0.1.0"
+description = "Smooth Transition ARDL (STARDL) and Smooth Transition Nonlinear ARDL (STNARDL) for Python"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "Tarek Sadraoui", email = "Tarek.sadraoui@gmail.com"}]
+keywords = ["econometrics", "ARDL", "NARDL", "smooth transition", "cointegration", "time series"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "numpy>=1.20",
+    "pandas>=1.3",
+    "scipy>=1.7",
+    "tabulate>=0.9",
+    "matplotlib>=3.5",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/tareksad/pystardl"
+
+[tool.setuptools]
+packages = ["pystardl"]
